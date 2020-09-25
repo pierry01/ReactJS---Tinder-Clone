@@ -12,10 +12,10 @@
 }
 
 .swipeButtons__repeat,
-.swipeButtons__repeat,
-.swipeButtons__repeat,
-.swipeButtons__repeat,
-.swipeButtons__repeat {
+.swipeButtons__left,
+.swipeButtons__star,
+.swipeButtons__right,
+.swipeButtons__lightning {
   padding: 3vw !important;
 }
 
