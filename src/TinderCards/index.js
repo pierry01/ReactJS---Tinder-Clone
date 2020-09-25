@@ -16,15 +16,23 @@ const TinderCards = () => {
   ])
 
   return (
-    <div>
+    <div className="tinderCards">
       <h1>Tinder Cards</h1>
+
+      <div className="tinderCards__cardContainer">
+
+      </div>
 
       {
         people.map(person => (
-          <TinderCard >
+          <TinderCard
+            className="tinderCards__swipe"
+            key={person.name}
+            preventSwipe={['up, down']}
+          >
             <div
               style={{ backgroundImage: `url(${person.url})` }}
-              className="card"
+              className="tinderCards__card"
             >
               <h3>{person.name}</h3>
             </div>
